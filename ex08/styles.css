@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.dashboard {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 30px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    background-color: #34495e;
+    color: white;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    grid-area: main;
+
+    padding: 25px;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 20px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.numero {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1f6fb2;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+th {
+    background-color: #1f6fb2;
+
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+/* Versión mobile */
+@media (max-width: 800px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto auto 1fr auto;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar nav {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

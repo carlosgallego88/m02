@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes CSS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Componentes CSS</h1>
+        <p>Ejemplos de componentes visuales reutilizables.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Cards</h2>
+
+            <div class="card">
+                <h3>Desarrollo Web</h3>
+
+                <p>
+                    Este componente puede reutilizarse para mostrar
+                    información de forma organizada.
+                </p>
+
+                <button class="btn btn-primary">
+                    Ver más
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Inteligencia Artificial</h3>
+
+                <p>
+                    Las tarjetas pueden utilizar el mismo estilo
+                    aunque contengan información diferente.
+                </p>
+
+                <span class="badge badge-info">
+                    Nuevo
+                </span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Botones</h2>
+
+            <button class="btn btn-primary">
+                Principal
+            </button>
+
+            <button class="btn btn-success">
+                Aceptar
+            </button>
+
+            <button class="btn btn-danger">
+                Eliminar
+            </button>
+        </section>
+
+        <section>
+            <h2>Alertas</h2>
+
+            <div class="alert alert-success">
+                Operación realizada correctamente.
+            </div>
+
+            <div class="alert alert-warning">
+                Atención: revisa los datos antes de continuar.
+            </div>
+
+            <div class="alert alert-danger">
+                Se ha producido un error.
+            </div>
+        </section>
+
+        <section>
+            <h2>Badges</h2>
+
+            <p>
+                Estado del proyecto:
+                <span class="badge badge-success">
+                    Completado
+                </span>
+            </p>
+
+            <p>
+                Nueva funcionalidad:
+                <span class="badge badge-info">
+                    Nuevo
+                </span>
+            </p>
+
+            <p>
+                Prioridad:
+                <span class="badge badge-danger">
+                    Alta
+                </span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Formulario</h2>
+
+            <form class="formulario">
+
+                <label for="nombre">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Introduce tu nombre"
+                >
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Introduce tu email"
+                >
+
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Componentes CSS - Carlos Gallego</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+/* Selector universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Selector de elemento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+}
+
+/* Selector de clase */
+.destaque {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Selector de ID */
+#nome {
+    border: 2px solid #1f4e79;
+}
+
+/* Selector descendente */
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Selector de atributo */
+input[type="email"] {
+    border: 2px solid #27ae60;
+}
+
+/* Pseudo-clase */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Bonus: focus */
+input:focus {
+    background-color: #fff8dc;
+    outline: 2px solid #f39c12;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Bonus: hover */
+button:hover {
+    background-color: #1f4e79;
+    color: white;
+}
